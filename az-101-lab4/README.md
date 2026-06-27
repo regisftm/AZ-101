@@ -2,7 +2,6 @@
 
 ## Lab Overview
 
-**Duration:** 35 minutes  
 **Difficulty:** Intermediate-Advanced  
 **Prerequisites:** Completed Labs 1-3, access to on-premises FortiGate
 
