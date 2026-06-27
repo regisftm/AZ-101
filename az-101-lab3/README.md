@@ -631,10 +631,9 @@ diagnose sys session list
 
 **End of Lab 3:**
 
-*Estimated completion time: 40 minutes*  
-*Next: Lab 4 - Site-to-Site VPN Configuration*
+*Next: [Lab 4 - Site-to-Site VPN Configuration](/az-101-lab4/README.md)*
 
 ---
 
-*Lab Guide Version 2.0 - November 2025*  
+*Lab Guide Version 2.1 - June 2026*  
 *Questions? Ask your instructor or refer to troubleshooting section.*
