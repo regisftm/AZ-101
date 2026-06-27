@@ -555,5 +555,5 @@ In Lab 3, you will:
 
 ---
 
-*Lab Guide Version 2.0 - November 2025*  
+*Lab Guide Version 2.1 - June 2026*  
 *Questions? Ask your instructor or refer to troubleshooting section.*

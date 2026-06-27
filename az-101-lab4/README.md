@@ -583,7 +583,7 @@ Now test the reverse direction.
 
 ```bash
 # On Redwood-Azure-FTG FortiGate CLI:
-diagnose sniffer packet any "host 10.100.3.4 and host 192.168.3.10" 4 20
+diagnose sniffer packet any "host 10.100.3.4 and host 192.168.2.10" 4 20
 # Generate traffic from VM
 # Watch for packets entering port2, encrypting, exiting via VPN
 ```
@@ -654,7 +654,7 @@ Compliance: ✓ Secure hybrid connectivity established
 6. Internet → Encrypted packets traverse internet
 7. On-prem FortiGate → Receives at port1, decrypts
 8. On-prem FortiGate → Checks policy (VPN inbound policy matches)
-9. On-prem FortiGate → Forwards to 192.168.3.10 via port2
+9. On-prem FortiGate → Forwards to 192.168.2.10 via port2
 10. Response follows reverse path
 
 **Key Point:** Traffic is encrypted end-to-end between FortiGates, protecting data in transit over the internet. Both FortiGates inspect traffic before encryption (outbound) and after decryption (inbound).
@@ -717,7 +717,7 @@ You can now:
 
 **Long-Term (6+ Months):**
 
-- Complete full AZ-series (AZ-101 through AZ-106)
+- Complete full AZ-series (AZ-101 through AZ-401)
 - Achieve NSE 4 and NSE 5 certifications
 - Lead FortiGate Azure deployments independently
 - Become FortiGate Azure subject matter expert for your organization
@@ -772,7 +772,7 @@ You've demonstrated dedication, technical aptitude, and commitment to mastering 
 **Phase 2 Failure:**
 
 | Log Message | Cause | Solution |
-|-------------|-------|----------|
+| --- | --- | --- |
 | "phase2 negotiation failed" | IPsec proposal mismatch | Verify Phase 2 encryption, hash, PFS settings match |
 | "no selectors matched" | Encryption domain issue | Verify local/remote subnets exactly mirror each other |
 
@@ -820,7 +820,7 @@ You've demonstrated dedication, technical aptitude, and commitment to mastering 
 
    ```bash
    # Azure FortiGate CLI:
-   diagnose sniffer packet any "host 10.100.3.4 and host 192.168.3.10" 4 20
+   diagnose sniffer packet any "host 10.100.3.4 and host 192.168.2.10" 4 20
    # Generate traffic from TestVM
    # Watch for packets entering port2, encrypting, exiting via VPN
    ```
@@ -890,22 +890,20 @@ diagnose debug enable
 diagnose debug disable
 
 # Show active IPsec sessions
-diagnose sys session filter dst 192.168.3.10/24
+diagnose sys session filter dst 192.168.2.10/24
 diagnose sys session list
 
 # Packet capture on VPN traffic
-diagnose sniffer packet any "host 10.100.3.5 and host 192.168.3.10" 4 50
+diagnose sniffer packet any "host 10.100.3.5 and host 192.168.2.10" 4 50
 ```
 
 ---
 
 ## **End of Lab 4 & AZ-101 Workshop**
 
-*Estimated Lab 4 time: 40 minutes*  
-*Total Workshop Time: 3 hours*
-
 ---
 
-*Lab Guide Version 1.0 - November 2025*  
+*Lab Guide Version 2.1 - June 2026*  
 *Questions? Contact your instructor.*  
+
 *Congratulations on completing AZ-101! 🎉*
