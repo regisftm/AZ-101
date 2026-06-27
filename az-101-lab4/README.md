@@ -507,7 +507,7 @@ We'll test connectivity from the on-premises Windows VM to the Azure hub.
    RemoteAddress    : 10.100.3.4
    RemotePort       : 22
    InterfaceAlias   : Ethernet
-   SourceAddress    : 192.168.3.10
+   SourceAddress    : 192.168.2.10
    TcpTestSucceeded : True
    ```
 
@@ -646,7 +646,7 @@ Compliance: ✓ Secure hybrid connectivity established
 
 **Azure VM to On-Prem VM (Cross-Site Connectivity):**
 
-1. TestVM-Protected VM (10.100.3.4) → Wants to reach Windows VM on-prem (192.168.3.10)
+1. TestVM-Protected VM (10.100.3.4) → Wants to reach Windows VM on-prem (192.168.2.10)
 2. Azure routing → Sends to FortiGate port2 (10.100.2.4)
 3. Azure FortiGate → Checks policy (VPN outbound policy matches)
 4. Azure FortiGate → Encrypts traffic with IPsec
@@ -740,7 +740,7 @@ You can now:
 
 - Fortinet Training Institute: <https://training.fortinet.com>
 - Free NSE 1-3 courses online
-- Paid NSE 4+ with hands-on labs
+- NSE 4+ with hands-on labs
 
 ### Thank You
 
@@ -795,7 +795,7 @@ You've demonstrated dedication, technical aptitude, and commitment to mastering 
    - [ ] Source/destination match actual traffic
 
 2. **Routing (Azure FortiGate):**
-   - [ ] Route to 192.168.3.0/24 via VPN tunnel interface
+   - [ ] Route to 192.168.2.0/24 via VPN tunnel interface
    - [ ] CLI: `get router info routing-table all | grep 192.168.0`
 
 3. **Routing (On-Prem FortiGate):**
