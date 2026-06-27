@@ -343,7 +343,7 @@ A Route Table holds User Defined Routes (UDRs) that override Azure's default rou
 
 #### Step 7: Associate Route Table with Subnet
 
-1. Go to the route table **`Redwood-Azure-RT-Protected`** resource
+1. Go back to the route table **`Redwood-Azure-RT-Protected`** resource
 2. Under **Settings**, click **"Subnets"**
 3. Click **"+ Associate"**
 4. Configure:
@@ -551,8 +551,7 @@ In Lab 3, you will:
 
 **End of Lab 2:**
 
-*Estimated completion time: 60 minutes*  
-*Next: Lab 3 - Security Policies & Test VM*
+*Next: [Lab 3 - Security Policies & Test VM](/az-101-lab3/README.md)*
 
 ---
 
