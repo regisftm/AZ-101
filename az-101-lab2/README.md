@@ -202,7 +202,7 @@ You need FortiGate's Public IP to access the web management interface.
    - Search for **Redwood-Azure-RG** resource group in Azure Portal
 
 2. **Find Public IP Resource:**
-   - Look for resource named **Redwood-Azure-FGT-PIP** (Type: Public IP address)
+   - Look for resource named **Redwood-Azure-fgt-pip** (Type: Public IP address)
    - Click on the resource
 
 3. **Copy IP Address:**
