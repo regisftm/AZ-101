@@ -80,7 +80,7 @@ A Resource Group is a logical container for Azure resources. All resources for R
 ### Troubleshooting
 
 | Issue | Solution |
-|-------|----------|
+| --- | --- |
 | "Create" button is grayed out | Verify all required fields are filled and region is selected |
 | "Access denied" error | Ensure you have Contributor role on the subscription |
 | Can't find Canada Central | Your subscription may not have access to this region; contact admin |
@@ -169,7 +169,7 @@ The Virtual Network provides the private IP address space for all Azure resource
 ### Troubleshooting
 
 | Issue | Solution |
-|-------|----------|
+| --- | --- |
 | Address space is invalid | Verify format: 10.100.0.0/16 (no spaces, correct slash) |
 | Deployment fails | Check for overlapping VNets in the region |
 | Can't delete default subnet | Make sure you're on IP Addresses tab during creation |
