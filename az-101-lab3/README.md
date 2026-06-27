@@ -248,6 +248,7 @@ We need a VM in Protected-Subnet to generate traffic and test FortiGate inspecti
      - **Source**: `all`
      - **Destination**: `all`
      - **Service**: `ALL`
+     - **NAT**: `Enabled`
      - **Log allowed traffic**: `All sessions`
 
    ![step4.1-screenshot](images/step4.1-screenshot.png)
@@ -332,11 +333,11 @@ Confirm FortiGate is inspecting traffic and logging it.
    - **Source IP:** Enter `10.100.3.4` (or your TestVM IP)
    - Click **Apply Filter**
 
-   ![step6.2-screenshot](images/step6.2-screenshot.png)
+   ![step6.2-animation](images/step6.2-animation.gif)
 
 3. **Examine Log Entries:**
    - Each row represents a traffic session
-   - Click on a log entry to see details
+   - Double-click on a log entry to see details
    - **Key fields to observe:**
      - **Source IP:** `10.100.3.4` (TestVM)
      - **Destination IP:** 8.8.8.8 or other internet IPs
@@ -344,16 +345,8 @@ Confirm FortiGate is inspecting traffic and logging it.
      - **Destination Interface:** port1 (External)
      - **Policy:** `internet_access`
      - **Action:** accept
-     - **NAT:** Yes (should show NAT was applied)
+     - **NAT:** Yes (shows NAT applied)
      - **Bytes Sent/Received:** Non-zero values
-
-4. **View Details:**
-   - Click on a log entry
-   - Detailed view shows:
-     - Original source IP: 10.100.3.4
-     - Translated source IP: FortiGate Public IP
-     - Full 5-tuple: src IP, src port, dst IP, dst port, protocol
-     - Policy matched
 
 ### Validation
 
