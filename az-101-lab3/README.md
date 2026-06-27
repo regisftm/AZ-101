@@ -443,29 +443,9 @@ You have successfully configured security policies and validated traffic inspect
 
 ### Architecture Review
 
-```text
 Complete Traffic Flow After Lab 3:
-┌────────────────────────────────────────────────────────┐
-│           Redwood-Azure-VNet (10.100.0.0/16)           │
-│                                                        │
-│  ┌───────────────┐  ┌──────────────┐  ┌───────────────┐│
-│  │   External    │  │   Internal   │  │  Protected    ││
-│  │ 10.100.1.0/24 │  │10.100.2.0/24 │  │10.100.3.0/24  ││
-│  │               │  │              │  │               ││
-│  │  ┌─────────┐  │  │              │  │ ┌────────────┐││
-│  │  │FortiGate│  │  │              │  │ │  TestVM    │││
-│  │  │  port1  ├──┼──┤  FortiGate   │  │ │ 10.100.3.4 │││
-│  │  │ Public  │  │  │    port2     │◄─┤ │            │││
-│  │  │20.x.x.x │  │  │  10.100.2.4  │  │ └────────────┘││
-│  │  └─────────┘  │  │              │  │               ││
-│  └───────────────┘  └──────────────┘  └───────────────┘│
-│         ▲                ▲                     │       │
-└─────────┼────────────────┼─────────────────────┼───────┘
-          │                │                     │
-      Internet      Policy: Accept          UDR: 0.0.0.0/0
-                    NAT: Enabled            →  10.100.2.4
-                    Logging: On
-```
+
+![final-architecture-lab3](images/final-architecture-lab3.png)
 
 ### Key Takeaways
 
