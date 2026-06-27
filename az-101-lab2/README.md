@@ -120,17 +120,16 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
 
    - **FortiGate Image Version**: `7.6.7`
    - **Instance Type**: `Standard_D2ls_v6` (Click on **Change size**)
-     > If the `Standard_D2ls_v6` is not available for you, or if you get an quota error, remember the video where you learned how to increase the quota for an specific vm family
+     > If the `Standard_D2ls_v6` is not available for you, or if you get an quota error, remember the video where you learned how to increase the quota for a specific vm family.
    - **Virtual Machine Security Type**: `Standard`
    - **Availability Option**: `No infrastructure redundancy required`
 
    ![step2.2-screenshot](images/step2.2-screenshot.png)
 
    Configuring **Licensing:**
-   - **FortiGate Image SKU**: `Bring Your Own License or FortiFlex`
    - Check **"My organization is using the FortiFlex subscription service"**
    - **FortiFlex Token**: `[Token provided by instructor]`
-   - Name of the FortiGate VM: `Redwood-Azure-FGT`
+   - Name of the FortiGate VM: `Redwood-Azure-fgt`
 
    ![step2.2-licensing-screenshot](images/step2.2-fortiflex-screenshot.png)
 
@@ -155,7 +154,7 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
 
    - Click **"Create new"**
       Configure:
-      - **Name**: `Redwood-Azure-FGT-PIP`
+      - **Name**: `Redwood-Azure-fgt-PIP`
       - **SKU**: `Standard`
       - **Route preference:** `Microsoft network`
       - Click **OK**
@@ -166,7 +165,6 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
 
    - ✅ All required fields filled (no red asterisks remaining)
    - ✅ Region shows "**Canada Central**"
-   - ✅ Instance type shows "**Standard_D2_v4**"
    - ✅ Username and password recorded securely
 
 5. Deploy
