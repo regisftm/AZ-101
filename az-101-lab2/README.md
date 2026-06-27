@@ -2,7 +2,6 @@
 
 ## Lab Overview
 
-**Duration:** 60 minutes  
 **Difficulty:** Intermediate  
 **Prerequisites:** Completed Lab 1, FortiFlex token (provided by instructor)
 
@@ -34,7 +33,7 @@ Redwood Industries' IT security policy requires all Azure workload traffic to be
 
 ---
 
-## PART 1: FortiGate VM Deployment (35 minutes)
+## PART 1: FortiGate VM Deployment
 
 This section deploys the FortiGate virtual machine and gets it licensed and operational.
 
@@ -57,9 +56,9 @@ Azure Marketplace is where you find and deploy third-party solutions, including 
 3. **Locate the Correct Listing:**
    - Look for listing published by **Fortinet**
    - **Important:** Multiple FortiGate listings exist
-    - **Select BYOL Version:**
+   - **Select BYOL Version:**
    - Click on **Fortinet FortiGate Next-Generation Firewall**
-     - [NOTE!] NOT the **Fortinet FortiGate Next-Generation Firewall (VM)** which includes a `Starts at $0.36/3 years` note
+     - > NOT the **Fortinet FortiGate Next-Generation Firewall (VM)** which includes a `Starts at $0.36/3 years` note
    - Review the overview tile (optional)
    - Click **Create** button
    - Select **Single VM**

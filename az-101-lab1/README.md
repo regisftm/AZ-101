@@ -2,7 +2,6 @@
 
 ## Lab Overview
 
-**Duration:** 30 minutes  
 **Difficulty:** Beginner  
 **Prerequisites:** Azure subscription with Contributor access
 
