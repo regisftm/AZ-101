@@ -154,7 +154,7 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
 
    - Click **"Create new"**
       Configure:
-      - **Name**: `Redwood-Azure-fgt-PIP`
+      - **Name**: `Redwood-Azure-fgt-pip`
       - **SKU**: `Standard`
       - **Route preference:** `Microsoft network`
       - Click **OK**
