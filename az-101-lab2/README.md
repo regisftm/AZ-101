@@ -58,7 +58,7 @@ Azure Marketplace is where you find and deploy third-party solutions, including 
    - **Important:** Multiple FortiGate listings exist
    - **Select BYOL Version:**
    - Click on **Fortinet FortiGate Next-Generation Firewall**
-     - > NOT the **Fortinet FortiGate Next-Generation Firewall (VM)** which includes a `Starts at $0.36/3 years` note
+     - > **NOT** the **Fortinet FortiGate Next-Generation Firewall (VM)** which includes a `Starts at $0.36/3 years` note
    - Review the overview tile (optional)
    - Click **Create** button
    - Select **Single VM**
@@ -117,14 +117,17 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
    - Click **Next**
 
 2. **Instance** configurations:
-   - **FortiGate Image SKU**: `Bring Your Own License or FortiFlex`
-   - **FortiGate Image Version**: `7.6.4`
-   - **Instance Type**: `Standard_D2_v4` (default for single VM)
+
+   - **FortiGate Image Version**: `7.6.7`
+   - **Instance Type**: `Standard_D2ls_v6` (Click on **Change size**)
+     > If the `Standard_D2ls_v6` is not available for you, or if you get an quota error, remember the video where you learned how to increase the quota for an specific vm family
+   - **Virtual Machine Security Type**: `Standard`
    - **Availability Option**: `No infrastructure redundancy required`
 
    ![step2.2-screenshot](images/step2.2-screenshot.png)
 
    Configuring **Licensing:**
+   - **FortiGate Image SKU**: `Bring Your Own License or FortiFlex`
    - Check **"My organization is using the FortiFlex subscription service"**
    - **FortiFlex Token**: `[Token provided by instructor]`
    - Name of the FortiGate VM: `Redwood-Azure-FGT`
