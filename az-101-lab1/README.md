@@ -438,7 +438,6 @@ Expected outputs should match your configuration above.
 
 **End of Lab 1:**
 
-*Estimated completion time: 30 minutes*  
 *Next: [Lab 2 - FortiGate VM Deployment & Traffic Steering](/az-101-lab2/README.md)*
 
 ---
