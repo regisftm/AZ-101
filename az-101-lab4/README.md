@@ -527,10 +527,10 @@ Now test the reverse direction.
 2. **Test Connectivity to On-Prem:**
 
    ```bash
-   nc -zv 192.168.3.10 3389
+   nc -zv 192.168.2.10 3389
    ```
 
-   **Target:** 192.168.3.10 is vm-on-prem-windows
+   **Target:** 192.168.2.10 is vm-on-prem-windows
 
    **Expected Result:**
 
