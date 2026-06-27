@@ -535,7 +535,7 @@ Now test the reverse direction.
    **Expected Result:**
 
    ```bash
-   Connection to 192.168.3.10 3389 port [tcp/ms-wbt-server] succeeded!
+   Connection to 192.168.2.10 3389 port [tcp/ms-wbt-server] succeeded!
    ```
 
 ### Validation
