@@ -213,7 +213,7 @@ You need FortiGate's Public IP to access the web management interface.
 
 ### Validation
 
-- ✅ You have copied an IP address in format: `4.x.x.x` or `52.x.x.x` (Canada Central IPs)
+- ✅ You have copied an IP address in format: `4.x.x.x`, `20.x.x.x` or `52.x.x.x` (Canada Central IPs)
 - ✅ IP address is written down or saved
 
 ---
@@ -291,11 +291,11 @@ A Route Table holds User Defined Routes (UDRs) that override Azure's default rou
 3. **Basics Tab:**
    - **Subscription:** Select your Azure subscription
    - **Resource group:** Select **Redwood-Azure-RG**
-   - **Region:** Select **Canada Central**
-     - ⚠️ **Critical:** Must match VNet region
    - **Name:** Enter `Redwood-Azure-RT-Protected`
      - Naming convention: RT = Route Table, Protected = associated subnet
    - **Propagate gateway routes**: `No`
+   - **Region:** Select **Canada Central**
+     - ⚠️ **Critical:** Must match VNet region
 
    ![step5.3-screenshot](images/step5.3-screenshot.png)
 
