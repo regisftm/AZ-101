@@ -119,6 +119,7 @@ We need a VM in Protected-Subnet to generate traffic and test FortiGate inspecti
    - In the **New Virtual IP** tab:
      - **Name**: `TESTVM-PROTECTED-VIP-SSH`
      - **Interface**: `port1`
+     - **Type**: `Static NAT`
      - **External IP address/range**: 0.0.0.0
      - Map to
        - **IPv4 address/range**: Select the `TESTVM-PROTECTED` from the Suggestions
@@ -136,6 +137,7 @@ We need a VM in Protected-Subnet to generate traffic and test FortiGate inspecti
    - In the **New Virtual IP** tab:
      - **Name**: `TESTVM-PROTECTED-VIP-HTTP`
      - **Interface**: `port1`
+     - **Type**: `Static NAT`
      - **External IP address/range**: 0.0.0.0
      - Map to
        - **IPv4 address/range**: Select the `TESTVM-PROTECTED` from the Suggestions
@@ -174,6 +176,7 @@ We need a VM in Protected-Subnet to generate traffic and test FortiGate inspecti
      - **Source**: `all`
      - **Destination**: `TESTVM-PROTECTED-VIPGRP`
      - **Service**: `SSH` and `HTTP`
+     - **NAT**: `Enabled`
 
      ![step2.3.1.a-screenshot](images/step2.3.1.a-creenshot.png)
 
@@ -190,6 +193,8 @@ We need a VM in Protected-Subnet to generate traffic and test FortiGate inspecti
 ### 3.1 Connect to the `TestVM-Protected` VM using SSH using the VIP you created
 
 1. Open the Azure Cloud Shell
+
+   ![step3.1.1-screenshot](images/step3.1.1-screenshot.png)
 
 2. SSH into the `TestVM-Protected`
 
