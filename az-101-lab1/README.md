@@ -41,7 +41,7 @@ Your network team is preparing Azure infrastructure for the first cloud workload
 
 ---
 
-## Step 1: Create Resource Group (5 minutes)
+## Step 1: Create Resource Group
 
 A Resource Group is a logical container for Azure resources. All resources for Redwood Industries will be organized in one Resource Group for easy management and cleanup.
 
@@ -88,15 +88,16 @@ A Resource Group is a logical container for Azure resources. All resources for R
 
 ---
 
-## Step 2: Create Virtual Network (VNet) (10 minutes)
+## Step 2: Create Virtual Network (VNet)
 
 The Virtual Network provides the private IP address space for all Azure resources. Think of it as your datacenter network in the cloud.
 
 1. **Create New Virtual Network:**
+   - Open the resource group **Redwood-Azure-RG**, that you just created.
    - Click **+ Create** button at the resource group
 
 2. **Navigate to Virtual Networks:**
-   - In Azure Portal top search bar, type **virtual network** and press enter
+   - In **Search the Marketplace** top search bar, type **virtual network** and press enter
    - Click **Create > Virtual network** in the **Virtual network** tile
 
    ![step2-animation](images/step2-animation.gif)
@@ -118,7 +119,7 @@ The Virtual Network provides the private IP address space for all Azure resource
 5. **IP Addresses Tab:**
    - **IPv4 address space:**
      - You'll see a default address space (likely 10.0.0.0/16)
-     - Modify the address space to `10.100.0.0/16` in the network field
+     - Modify the address space to `10.100.0.0/16` in the **Starting address** field
 
    - **Subnets:**
      - ⚠️ **Do NOT add subnets here** - we'll create them separately in the next steps for better control
@@ -140,7 +141,7 @@ The Virtual Network provides the private IP address space for all Azure resource
    ![step2.6-screenshot](images/step2.6-screenshot.png)
 
 7. **Wait for Deployment:**
-   - Deployment typically takes 5-10 seconds
+   - Deployment typically takes 10-15 seconds
    - You'll see "Your deployment is complete" message
    - Click **Go to resource**
 
@@ -176,7 +177,7 @@ The Virtual Network provides the private IP address space for all Azure resource
 
 ---
 
-## Step 3: Create External Subnet (5 minutes)
+## Step 3: Create External Subnet
 
 The External subnet will host FortiGate's port1 interface, which connects to the internet and provides management access.
 
@@ -198,6 +199,8 @@ The External subnet will host FortiGate's port1 interface, which connects to the
    - **Subnet address range:** Enter `10.100.1.0/24`
      - This provides 256 IPs (10.100.1.0 through 10.100.1.255)
      - ⚠️ Azure reserves 5 IPs: .0, .1, .2, .3, .255 (251 usable IPs)
+   - **Private Subnet**
+     - Enable private subnet (no default outbound access): **Unchecked**
    - **NAT Gateway:** Leave as **None**
    - **Network security group:** Leave as **None** (we'll create later if needed)
    - **Route table:** Leave as **None**
@@ -235,7 +238,7 @@ Azure reserves 5 IPs in every subnet:
 
 ---
 
-## Step 4: Create Internal Subnet (5 minutes)
+## Step 4: Create Internal Subnet
 
 The Internal subnet (also called Transit subnet) will host FortiGate's port2 interface, which performs all traffic inspection.
 
@@ -249,6 +252,8 @@ The Internal subnet (also called Transit subnet) will host FortiGate's port2 int
 3. **Configure Subnet:**
    - **Name:** Enter `Internal-Subnet`
    - **Subnet address range:** Enter `10.100.2.0/24`
+   - **Private Subnet**
+     - Enable private subnet (no default outbound access): **Unchecked**
    - Leave all other settings as default (None for NSG, Route table, etc.)
 
 4. **Add Subnet:**
@@ -277,7 +282,7 @@ Internet → port1 (inspect) → port2  → Protected Workload
 
 ---
 
-## Step 5: Create Protected Subnet (5 minutes)
+## Step 5: Create Protected Subnet
 
 The Protected subnet hosts your application workloads and VMs that require FortiGate security inspection.
 
@@ -290,6 +295,8 @@ The Protected subnet hosts your application workloads and VMs that require Forti
 3. **Configure Subnet:**
    - **Name:** Enter `Protected-Subnet`
    - **Subnet address range:** Enter `10.100.3.0/24`
+   - **Private Subnet**
+     - Enable private subnet (no default outbound access): **Unchecked**
    - Leave all other settings as default
 
 4. **Add Subnet:**
@@ -450,5 +457,5 @@ Expected outputs should match your configuration above.
 
 ---
 
-*Lab Guide Version 2.0 - November 2025*  
+*Lab Guide Version 2.1 - Jun 2026*  
 *Questions? Ask your instructor or refer to the main workshop materials.*
