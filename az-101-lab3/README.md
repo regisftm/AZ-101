@@ -2,7 +2,6 @@
 
 ## Lab Overview
 
-**Duration:** 40 minutes  
 **Difficulty:** Intermediate  
 **Prerequisites:** Completed Lab 1 and Lab 2, FortiGate licensed and accessible
 
