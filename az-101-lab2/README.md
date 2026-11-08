@@ -407,15 +407,7 @@ A Route Table holds User Defined Routes (UDRs) that override Azure's default rou
 
 **Traffic flow:**
 
-```text
-VM (10.100.3.5) → wants google.com
-  ↓ (checks route table)
-0.0.0.0/0 matches! → next-hop = 10.100.2.4
-  ↓
-FortiGate port2 receives packet
-  ↓ (inspect, apply policy, NAT)
-FortiGate port1 sends to internet
-```
+![traffic_flow](images/traffic_flow.png)
 
 ---
 
