@@ -251,7 +251,8 @@ The Internal subnet (also called Transit subnet) will host FortiGate's port2 int
 
 3. **Configure Subnet:**
    - **Name:** Enter `Internal-Subnet`
-   - **Subnet address range:** Enter `10.100.2.0/24`
+   - **Starting address:** Enter `10.100.2.0`
+   - **Size:** Enter `/24 (256 addresses)`
    - **Private Subnet**
      - Enable private subnet (no default outbound access): **Unchecked**
    - Leave all other settings as default (None for NSG, Route table, etc.)
@@ -294,7 +295,8 @@ The Protected subnet hosts your application workloads and VMs that require Forti
 
 3. **Configure Subnet:**
    - **Name:** Enter `Protected-Subnet`
-   - **Subnet address range:** Enter `10.100.3.0/24`
+   - **Starting address:** Enter `10.100.3.0`
+   - **Size:** Enter `/24 (256 addresses)`
    - **Private Subnet**
      - Enable private subnet (no default outbound access): **Unchecked**
    - Leave all other settings as default
