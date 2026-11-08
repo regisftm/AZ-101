@@ -276,10 +276,7 @@ The Internal subnet (also called Transit subnet) will host FortiGate's port2 int
 
 **Traffic Flow:**
 
-```text
-Protected Workload → port2 (inspect) → port1 → Internet
-Internet → port1 (inspect) → port2  → Protected Workload
-```
+![traffoc_flow](images/traffic_flow.png)
 
 ---
 
