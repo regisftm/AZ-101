@@ -53,7 +53,7 @@ We need a VM in Protected-Subnet to generate traffic and test FortiGate inspecti
    - **Availability options**: `No infrastructure redundancy required`
    - **Image**: `Ubuntu Server 24.04 LTS - x64 Gen2`
    - **VM architecture**: `x64`
-   - **Size**: `Standard_B1ms - 1 vcpus, 2 GiB memory`
+   - **Size**: `Standard_B2ats_v2 - 2 vcpus, 1 GiB memory`
 
    ![step1.2-screenshot](images/step1.2-screenshot.png)
 
