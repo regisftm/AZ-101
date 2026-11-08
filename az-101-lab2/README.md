@@ -2,7 +2,6 @@
 
 ## Lab Overview
 
-**Difficulty:** Intermediate  
 **Prerequisites:** Completed Lab 1, FortiFlex token (provided by instructor)
 
 ### Objective

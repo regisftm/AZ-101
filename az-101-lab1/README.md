@@ -2,7 +2,6 @@
 
 ## Lab Overview
 
-**Difficulty:** Beginner  
 **Prerequisites:** Azure subscription with Contributor access
 
 ### Objective
