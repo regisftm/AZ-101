@@ -69,12 +69,12 @@ We need a VM in Protected-Subnet to generate traffic and test FortiGate inspecti
 
 ### 1.4 Configure VM Disks
 
-1. Click **"Next: Disks >"**
+1. Click **"Next"**
 2. Keep default disk configurations (Premium SSD, Image default (30 GiB))
 
 ### 1.5 Configure VM Networking
 
-1. Click **"Next: Networking >"**
+1. Click **"Next"**
 
 2. **Networking** tab configuration:
    - **Virtual network**: `Redwood-Azure-VNet (Redwood-Azure-RG)`
@@ -635,5 +635,5 @@ diagnose sys session list
 
 ---
 
-*Lab Guide Version 2.1 - June 2026*  
+*Lab Guide Version 2.2 - Nov 2026*  
 *Questions? Ask your instructor or refer to troubleshooting section.*
