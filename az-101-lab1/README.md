@@ -195,13 +195,14 @@ The External subnet will host FortiGate's port1 interface, which connects to the
 
 4. **Configure Subnet:**
    - **Name:** Enter `External-Subnet`
-   - **Subnet address range:** Enter `10.100.1.0/24`
+   - **Starting address:** Enter `10.100.1.0`
+   - **Size:** Enter `/24 (256 addresses)`
      - This provides 256 IPs (10.100.1.0 through 10.100.1.255)
      - ⚠️ Azure reserves 5 IPs: .0, .1, .2, .3, .255 (251 usable IPs)
    - **Private Subnet**
      - Enable private subnet (no default outbound access): **Unchecked**
    - **NAT Gateway:** Leave as **None**
-   - **Network security group:** Leave as **None** (we'll create later if needed)
+   - **Network security group:** Leave as **None**
    - **Route table:** Leave as **None**
    - **Service endpoints:** Leave unchecked
    - **Subnet delegation:** Leave as **None**
