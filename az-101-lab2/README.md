@@ -57,7 +57,7 @@ Azure Marketplace is where you find and deploy third-party solutions, including 
    - **Important:** Multiple FortiGate listings exist
    - **Select BYOL Version:**
    - Click on **Fortinet FortiGate Next-Generation Firewall**
-     - > **NOT** the **Fortinet FortiGate Next-Generation Firewall (VM)** which includes a `Starts at $0.36/3 years` note
+     - > **NOT** the **Fortinet FortiGate Next-Generation Firewall (PAYG)** which includes a `Starts at $0.36/hour` note
    - Review the overview tile (optional)
    - Click **Create** button
    - Select **Single VM**
