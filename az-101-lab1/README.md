@@ -454,5 +454,5 @@ Expected outputs should match your configuration above.
 
 ---
 
-*Lab Guide Version 2.1 - June 2026*  
+*Lab Guide Version 2.2 - Nov 2026*  
 *Questions? Ask your instructor or refer to the main workshop materials.*
