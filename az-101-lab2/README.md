@@ -175,14 +175,6 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
 
 ### Troubleshooting Deployment Failures
 
-If deployment fails, check:
-
-| Error | Possible Cause | Solution |
-| --- | --- | --- |
-| "Quota exceeded" | Not enough vCPU quota in region | Request quota increase via Azure Portal → Support |
-| "Subnet not available" | Subnet specified doesn't exist | Verify Lab 1 completed, check subnet names |
-| "IP address in use" | 10.100.2.4 already assigned | Check for other VMs in Internal-Subnet, use different IP or delete conflicting resource |
-
 **If deployment fails:**
 
 1. Note the specific error message
@@ -245,6 +237,7 @@ Access FortiGate web GUI and perform initial setup.
    - **Username:** Enter `fortiuser`
    - **Password:** Enter the password you created before
    - Click **Login** button
+   - Go through the **Setup Progress**
 
 6. **Dashboard Loads:**
    - You should see FortiGate Dashboard
@@ -262,10 +255,9 @@ Access FortiGate web GUI and perform initial setup.
 
 | Issue | Solution |
 |-------|----------|
-| "Can't reach this page" / Timeout | Verify Public IP correct, check NSG allows port 443, wait 2-3 minutes after deployment |
-| "Connection refused" | FortiGate may still be initializing, wait 5 minutes and retry |
+| "Can't reach this page" / Timeout | Verify Public IP correct, wait 2-3 minutes after deployment |
+| "Connection refused" | FortiGate may still be initializing, wait 2-3 minutes and retry |
 | Wrong password | Make sure that you are using the password you configured before. Is `caps lock` active? |
-| Can't find instance ID | Azure Portal → VM → Overview → Properties → Look for VM ID |
 | Browser shows "ERR_CERT_AUTHORITY_INVALID" | Normal, proceed anyway (self-signed cert) |
 
 ---
@@ -293,6 +285,7 @@ A Route Table holds User Defined Routes (UDRs) that override Azure's default rou
    - **Name:** Enter `Redwood-Azure-RT-Protected`
      - Naming convention: RT = Route Table, Protected = associated subnet
    - **Propagate gateway routes**: `No`
+   - **Enable peering routes (Preview):** `Checked`
    - **Region:** Select **Canada Central**
      - ⚠️ **Critical:** Must match VNet region
 
