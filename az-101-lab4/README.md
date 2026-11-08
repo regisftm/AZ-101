@@ -111,7 +111,7 @@ We'll configure the VPN starting from the on-premises side.
    - This is normal - FortiGate uses self-signed certificate
 
 4. **Login:**
-   - **Username:** `fortinetuser`
+   - **Username:** `fortiuser`
    - **Password:** (The password you created during on-prem FortiGate deployment)
    - Click **Login**
 
@@ -903,7 +903,7 @@ diagnose sniffer packet any "host 10.100.3.5 and host 192.168.2.10" 4 50
 
 ---
 
-*Lab Guide Version 2.1 - June 2026*  
+*Lab Guide Version 2.2 - Nov 2026*  
 *Questions? Contact your instructor.*  
 
 *Congratulations on completing AZ-101! 🎉*
