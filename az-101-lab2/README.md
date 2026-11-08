@@ -117,7 +117,7 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
 
 2. **Instance** configurations:
 
-   - **FortiGate Image Version**: `7.6.7`
+   - **FortiGate Image Version**: `7.6.8`
    - **Instance Type**: `Standard_D2ls_v6` (Click on **Change size**)
      > If the `Standard_D2ls_v6` is not available for you, or if you get an quota error, remember the video where you learned how to increase the quota for a specific vm family.
    - **Virtual Machine Security Type**: `Standard`
@@ -127,7 +127,7 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
 
    Configuring **Licensing:**
    - Check **"My organization is using the FortiFlex subscription service"**
-   - **FortiFlex Token**: `[Token provided by instructor]`
+   - **FortiGate FortiFlex**: `[Token provided by instructor]`
    - Name of the FortiGate VM: `Redwood-Azure-fgt`
 
    ![step2.2-licensing-screenshot](images/step2.2-fortiflex-screenshot.png)
