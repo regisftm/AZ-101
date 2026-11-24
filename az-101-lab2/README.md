@@ -104,7 +104,7 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
 1. **Basics** configuration:
    - **Resource group**: `Redwood-Azure-RG` (created in Lab 1)
    - **Region**: `Canada Central`
-   - **FortiGate VM instance Architecture**: `X64 - Intel / AMD based processors | Gen2 VM FortiGate 7.6+`
+   - **FortiGate VM instance Architecture**: `X64 - Intel / AMD based processors | Gen2 VM FortiGate 7.4 - 8.0+`
    - **Username**: `fortiuser`
    - **Password**: Choose a strong password
      - Requirements: 12+ characters, uppercase, lowercase, number, special character
